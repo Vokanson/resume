@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto&display=swap');
+
+
+
+body{
+    font-size: 16px;
+    font-family: roboto, sans-serif;
+    font-weight: bolder;
+    line-height: 20px;
+    word-spacing: 20px;
+
+}
+
+.info {
+    display: flex;
+}
+.info-text {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+@media (max-width: 650px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+
+/*.info p {*/
+/*    display: inline-block;*/
+/*}*/
+.card{
+    /*border: 1px solid black;*/
+    border-radius: 20px;
+    /*background: #fff;*/
+}
+.bg-red {
+    background: #ffe5e5;
+}
+@media (max-width: 650px) {
+    .bg-red  {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+.bg-yellow {
+    background: #fff9dc;
+}
+.bg-green {
+        background: #e5ffe7;
+}
+
+@media (max-width: 650px) {
+    .bg-green {
+        display: block;
+        text-align: center;
+    }
+
+}
+/**{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+.container {
+   width: 700px;
+    margin: auto;
+
+}
+
+
+@media (max-width: 650px) {
+    .container {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+.отступ {
+    padding-left: 20px;
+}
+.indent  {
+    padding: 0 20px;
+}
+.indent li{
+    color: #86898f;
+    margin-bottom: 10px;
+}
+
+.avatar{
+    border-radius: 5%;
+    width: 200px;
+    box-shadow: 4px 4px 14px rgba(0,0,0, 0.25);
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    color: orange;
+}
+a:visited {
+    color: yellow;
+}
+a:active {
+    color: green;
+}
+.btn {
+    background: #111;
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: inherit;
+}
+.btn:hover {
+    opacity: .8;
+    color: orange;
+}
+.box {
+    background: #86898f;
+}
+.box h3 {
+    text-align: center;
+}
+
+.form-row {
+    margin-bottom: 100px; /*отступ снизу*/
+}
+
+.form-row .form-group {
+    display: inline-block;
+    margin-right: 20px;
+    width: calc(50% - 40px); /*для того что бы уместить элементы в линию на всю ширину с учётом отступов, но необходимо ниже добавить first-child margin-right в значении ноль*/
+}
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+
+
+.form-group label{
+    display: block; /* значение block ставится по тому что label по умолчанию это inline элемент*/
+    font-size: 14px;
+    color: black;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent; /* значение transparent для прозрачности элемента. То есть элмент к которому это применяется станет прозрачным с цветом основания*/
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none; /* значение none что бы поле ввода не обводилось синей линией при вводе текста */
+    font-family: inherit;
+}
